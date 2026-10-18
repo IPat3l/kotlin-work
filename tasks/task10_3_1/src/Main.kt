@@ -17,6 +17,8 @@ fun main(args: Array<String>) {
     val word = args[0].lowercase()
     val result = translate[word]
 
-    //println(result)
-    display(result)
+    when (result) {
+        null -> println("?")
+        else -> display(result)
+    }
 }
